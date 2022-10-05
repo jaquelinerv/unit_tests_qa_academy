@@ -23,5 +23,17 @@ public class Execucao_exercicios_medium {
             System.out.println("O valor final do investimento  após 10 anos (5% a.a) é: " + df.format(exe02m.retornaValorInvestimento(valorInvestimento)));
             System.out.println("O recebimento de juros foi de: " + df.format (exe02m.calculaValorTotalInvestimento(valorInvestimento, valorJuros)));
         }
+
+        if (selecionaExercicio == 3){
+            Exercicio_03_medium ex03_medium = new Exercicio_03_medium();
+            ex03_medium.somarNumerosAcumulados();
+        }
+
+        //exe06
+        if (selecionaExercicio == 6) {
+        Exercicio_06_medium ex06_medium = new Exercicio_06_medium();
+        int fatorial = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor para descobrir o fatorial: "));
+        System.out.println(ex06_medium.calculaFatorial(fatorial));
     }
+}
 }

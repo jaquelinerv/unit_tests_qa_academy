@@ -1,31 +1,31 @@
 package medium;
 public class Exercicio_07_08_medium {
-    static int i;
-    public static void main(String[] args) {
-     String meses[] = new String [12];
-        meses[0] = "Janeiro";
-        meses[1] = "Fevereiro";
-        meses[2] = "Março";
-        meses[3] = "Abril";
-        meses[4] = "Maio";
-        meses[5] = "Junho";
-        meses[6] = "Julho";
-        meses[7] = "Agosto";
-        meses[8] = "Setembro";
-        meses[9] = "Outubro";
-        meses[10] = "Novembro";
-        meses[11] = "Dezembro";
+    public String[] criaVetorMeses() {
 
-        /* for (int i = 0; i < meses.length; i++) {
-            System.out.println(meses[i]);
-        }*/ // no for nao aparece o número do mês
+        String vetorMeses[] = new String[12];
 
-        while (i < 12){
-            System.out.println("O mês " + (i + 1) + " é " + meses[i]);
+        vetorMeses[0] = "Janeiro";
+        vetorMeses[1] = "Fevereiro";
+        vetorMeses[2] = "Março";
+        vetorMeses[3] = "Abril";
+        vetorMeses[4] = "Maio";
+        vetorMeses[5] = "Junho";
+        vetorMeses[6] = "Julho";
+        vetorMeses[7] = "Agosto";
+        vetorMeses[8] = "Setembro";
+        vetorMeses[9] = "Outubro";
+        vetorMeses[10] = "Novembro";
+        vetorMeses[11] = "Dezembro";
+
+        return vetorMeses;
+    }
+    public void imprimeValorVetor(String[] vetorMeses){
+        int i = 0;
+        while (i < 12 ){
+            System.out.println("O mes : " + (i+1) + " - " + vetorMeses[i]);
             i++;
         }
-        /* no while aparece o número do mês correto. i inicia com 0 e toda vez que passar
-         no while adiciona + 1*/
+
     }
 }
 
